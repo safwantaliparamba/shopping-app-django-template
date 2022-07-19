@@ -1,0 +1,30 @@
+{% load static %}
+<header>
+    <h1><a href=""> Shopping App </a></h1>
+    <form action="" method="get">
+        <input type="search" placeholder="Search here..." name="q" />
+        <button type="submit">
+            <img src="{% static 'images/search.svg' %}" class="wrap" alt="" />
+        </button>
+    </form>
+    <nav>
+        {% if request.user.is_authenticated %}
+        <ul>
+                    <li><a href="/"> Home </a></li>
+                    <li><a href="/" class="profile">Username</a></li>
+                    <li>
+                        <a href="/" class="cart" >
+                             <img class="wrap" src="{% static 'images/cart.svg' %}" alt="cart" />
+                             <span>02</span> 
+                        </a>
+                    </li>
+                    <li><a href="/" class="logout">Logout</a></li>
+         </ul>
+         {% else %}
+        <ul>
+            <li><a href="/" class="auth login">Login</a></li>
+            <li><a href="/" class="auth register">Register</a></li>
+        </ul>
+        {% endif %}
+    </nav>
+</header>

@@ -1,0 +1,22 @@
+{% extends "boilerplate/boilerplate.html" %} {% load static %}{% block content%}
+
+<section id="home">
+    <section class="wrapper">
+        <h1>Products</h1>
+        <ul>
+            {% for product in products %}
+            <li class="product">
+                <img src="{{ product.image.url }}" alt="mobile" />
+                <a href="#"><h3>{{ product.name }}</h3></a>
+                <p>{{ product.small_description }}</p>
+                <h4>₹{{product.price}}</h4>
+                <div class="buy">
+                    <a href="#" class="to-cart">Add to Cart</a>
+                    <a href="#" class="buy-now">Buy Now</a>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+</section>
+{% endblock %}
