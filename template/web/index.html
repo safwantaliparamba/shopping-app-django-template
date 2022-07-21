@@ -7,12 +7,16 @@
             {% for product in products %}
             <li class="product">
                 <img src="{{ product.image.url }}" alt="mobile" />
-                <a href="#"><h3>{{ product.name }}</h3></a>
+                <a href="/"><h3>{{ product.name }}</h3></a>
                 <p>{{ product.small_description }}</p>
                 <h4>₹{{product.price}}</h4>
                 <div class="buy">
-                    <a href="#" class="to-cart">Add to Cart</a>
-                    <a href="#" class="buy-now">Buy Now</a>
+                    {% if product.is_out_of_stock %}
+                    <button disabled="disabled" class="out-of-stock">Out of Stock</button>
+                    {% else %}
+                    <a href="{% url 'cart:add_to_cart' id=product.id %}" class="to-cart">Add to Cart</a>
+                    <a href="/" class="buy-now">Buy Now</a>
+                    {% endif %}
                 </div>
             </li>
             {% endfor %}

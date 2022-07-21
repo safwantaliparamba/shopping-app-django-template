@@ -81,6 +81,10 @@ br.clear {
   display: block;
 }
 
+#wrapp {
+  padding-top: 150px;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -93,6 +97,8 @@ header {
           align-items: center;
   width: 100%;
   position: fixed;
+  background-color: inherit;
+  z-index: 5;
   padding: 25px 100px;
   width: 100%;
   -webkit-box-shadow: 2px 6px 22px -1px #a3a0a0bf;
@@ -196,10 +202,6 @@ header nav ul li a.register {
   background: #ffade9;
 }
 
-#home {
-  padding: 100px 0;
-}
-
 #home section.wrapper h1 {
   text-align: center;
   font-size: 32px;
@@ -265,6 +267,16 @@ header nav ul li a.register {
   margin-right: 0;
 }
 
+#home section.wrapper ul li.product .buy button.out-of-stock {
+  font-size: 17px;
+  text-align: center;
+  width: 100%;
+  cursor: not-allowed;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
 #home section.wrapper ul li.product .buy a.to-cart {
   color: #264500;
   background-color: #abff98;
@@ -273,5 +285,97 @@ header nav ul li a.register {
 #home section.wrapper ul li.product .buy a.buy-now {
   background-color: #ffcd69;
   color: #472f00;
+}
+
+#signup .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#signup .wrapper .left {
+  width: 50%;
+}
+
+#signup .wrapper .left img.wrap {
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+
+#signup .wrapper .right {
+  background: #e3e3e338;
+  border-radius: 15px;
+  width: 50%;
+  padding: 100px 0 50px;
+}
+
+#signup .wrapper .right h1 {
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  color: #25044d;
+  margin-bottom: 60px;
+}
+
+#signup .wrapper .right form {
+  width: 100%;
+}
+
+#signup .wrapper .right form .input-wrapper {
+  margin: 30px 80px;
+}
+
+#signup .wrapper .right form .input-wrapper label {
+  width: 100%;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+#signup .wrapper .right form .input-wrapper input {
+  width: 100%;
+  border: 1px solid #7b6b91;
+  border-radius: 10px;
+  font-size: 19px;
+  font-weight: 600;
+  padding: 10px 20px;
+}
+
+#signup .wrapper .right form p.error {
+  width: 80%;
+  margin: 0 auto;
+  border: 2px solid #ff4444;
+  color: #ff4444;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
+#signup .wrapper .right form button[type="submit"] {
+  text-align: center;
+  display: block;
+  width: 90%;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #ddc4ff;
+  color: #9e5ef3;
+  padding: 15px;
+  margin: 0 auto;
+  border-radius: 25px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+#signup .wrapper .right p {
+  font-weight: 600;
+  text-align: center;
+  margin-top: 24px;
+}
+
+#signup .wrapper .right p a {
+  font-weight: inherit;
+  text-decoration: underline;
+  margin-right: 8px;
+  color: #9e5ef3;
 }
 /*# sourceMappingURL=style.css.map */

@@ -9,7 +9,10 @@
         <link rel="stylesheet" href="{% static 'css/style.css' %}" />
     </head>
     <body>
-        {% include 'includes/header.html' %} {% block content %} {% endblock %}
+        {% include 'includes/header.html' %}
+         <section id="wrapp">
+            {% block content %} {% endblock %}
+         </section>
     </body>
 </html>
 

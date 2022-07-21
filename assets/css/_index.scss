@@ -1,5 +1,4 @@
 #home{
-    padding: 100px 0;
 
     section.wrapper{
         h1{
@@ -57,6 +56,15 @@
                         &:last-child{
                             margin-right: 0;
                         }
+                    }
+                    button.out-of-stock{
+                        font-size: 17px;
+                        text-align: center;
+                        width: 100%;
+                        cursor: not-allowed;
+                        padding: 12px 24px;
+                        border-radius:10px;
+                        font-weight: 600;
                     }
                     a.to-cart{
                         color: #264500;

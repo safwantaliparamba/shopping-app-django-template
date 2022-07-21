@@ -1,0 +1,33 @@
+{% extends "boilerplate/boilerplate.html" %} {% load static %}{% block content%}
+
+<section id="signup">
+    <div class="wrapper">
+        <div class="left">
+            <img src="{% static 'images/login.svg' %}" class="wrap" alt="" />
+        </div>
+        <!-- /.left -->
+        <div class="right">
+            <h1>Register</h1>
+            <form action="" method="post">
+                {% csrf_token %} {% for field in form %}
+                <div class="input-wrapper">
+                    <label for="{{field.id_for_label}}">{{field.label}}</label>
+                    {{field}}
+                </div>
+                {% endfor %}
+                {% if error %}
+                <p class="error">{{message}}</p>
+                {% endif %}
+                <button type="submit">Register</button>
+                <p>
+                    Already have an account?
+                    <a href="{% url 'users:login' %}">Login</a>
+                </p>
+            </form>
+        </div>
+        <!-- /.right -->
+    </div>
+</section>
+<!-- /#signup -->
+
+{% endblock %}

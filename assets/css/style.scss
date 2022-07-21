@@ -71,7 +71,11 @@ br.clear {
 	display: block;
 }
 
+#wrapp{
+	padding-top: 150px;
+}
+
 // header
 @import 'header';
 @import 'index';
-@import 'login';
+@import 'signup';
