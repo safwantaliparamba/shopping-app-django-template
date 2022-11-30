@@ -1,0 +1,54 @@
+{% extends "boilerplate/boilerplate.html" %} {% load static %}{% block content%}
+
+<section id="orders">
+        <div class="wrapper">
+            <h1>Order History</h1>
+        {% if orders %}
+        <ul class="orders">
+            {% for item in orders %}
+            <li>
+                <a href="{% url 'users:order_item' id=item.id %}">
+                    <div class="details">
+                        <h2>
+                            <img src="{{ item.product.image.url }}" alt="">
+                        </h2>
+                        <div class="wrapp">
+                            <h2>{{ item.product.name }}</h2>
+                        <p>{{ item.product.short_description|truncatewords:10 }}...</p>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <h2>₹{{ item.total_price }}</h2>
+                    </div>
+                    <div class="status">
+                        {% if item.status == 'canceled' %}
+                        <span class="round red"></span>
+                        <span>Cancelled on {{item.ordered_date|date:'F d'}}</span>
+                        {% elif item.status == 'delivered' %}
+                        <span class="round"></span>
+                        <span>Delivered on {{item.ordered_date|date:'F d'}}</span>
+                        {% else %}
+                        <span class="round"></span>
+                        <span>Booked on {{item.ordered_date|date:'F d'}}</span>
+                        {% endif %}
+                    </div>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+
+
+        {% else %}
+        {% if is_author  %}
+        <h3>You haven't ordered yet!</h3>
+        <div class="no-orders">
+            <a href="/" class="btn">Go shop now!</a>
+        </div>
+        {% else %}
+        <h3>Not ordered yet!</h3>
+        {% endif %}
+        {% endif %}
+        </div>
+</section>
+
+{% endblock %}

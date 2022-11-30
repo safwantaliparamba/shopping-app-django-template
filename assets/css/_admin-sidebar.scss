@@ -1,0 +1,52 @@
+.superadmin-dashboard{
+    // padding: 0 100px;
+    justify-content: none;
+
+    &>.left{
+        width: 20%;
+        height: 85vh;
+    }
+    &>.right{
+        // padding: 32px;
+        width: 80%;
+        min-height: 85vh;
+        margin: 20px;
+    }
+}
+
+#admin-sidebar {
+    background: #d8d8d840;
+    border-radius: 30px;
+    margin: 20px ;
+    height: 100%;
+    position: fixed;
+    padding: 100px 0;
+
+    &>h1 {
+        @include title;
+        // font-size: 22px;
+        margin-bottom: 32px;
+    }
+    ul{
+        padding: 0 50px;
+        li{
+            display: block;
+            // text-align: center;
+            width: 200px;
+            margin: 0 auto;
+            
+            a{
+                display: inline-block;
+                width: 100%;
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom: 24px;
+                &:not(.active){
+                    background: none;
+                    color: #111;
+                    // margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

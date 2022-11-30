@@ -1,10 +1,6 @@
 from django.contrib import admin
 
-from .models import Cart
+from .models import Cart,CartItem
 
-
-class CartAdmin(admin.ModelAdmin):
-    list_display = ['product','id','quantity','customer','total_price']
-
-
-admin.site.register(Cart,CartAdmin)
+admin.site.register(Cart)
+admin.site.register(CartItem)

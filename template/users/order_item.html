@@ -1,0 +1,136 @@
+{% extends "boilerplate/boilerplate.html" %} {% load static %}{% block content%}
+
+<section id="order_details">
+    <div class="wrapper">
+        <div class="link">
+            <a href="{% url 'web:index' %}">Home ></a>
+            <a href="{% url 'users:profile' pk=order.order.customer.id %}">My Account ></a>
+            <a href="{% url 'users:orders' pk=order.order.customer.id %}">Orders ></a>
+            <a href="">{{ order.id }}</a>
+        </div>
+        <div class="top">
+            <div class="left">
+                <h1>Delivery Address</h1>
+                <div class="item">
+                    <span>name:</span
+                    ><span>{{ order.order.customer.name }}</span>
+                </div>
+                <div class="item">
+                    <span>address:</span>
+                    <span>{{ order.address }} <br>{{ order.order.customer.pin_code }}</span>
+                </div>
+                <div class="item">
+                    <span>phone number:</span
+                    ><span>{{ order.order.customer.phone }}</span>
+                </div>
+            </div>
+            {% if order.status == 'delivered' %}
+            <div class="right">
+                <a href="#" class="btn">Download invoice</a>
+            </div>
+            {% endif %}
+        </div>
+        <!-- /.top -->
+        <div class="bottom">
+            <div class="left">
+                <a href="{% url 'products:single_product' pk=order.product.id %} " class="wrap">
+                    <img src="{{ order.product.image.url }}" alt="">
+                </a>
+            </div>
+            <!-- /.left -->
+            <div class="middle">
+                <a href="{% url 'products:single_product' pk=order.product.id %} " class="wrapp">
+                    <h4>{{order.product.name}}</h4>
+                </a>
+                <h4>Quantity <span>: {{ order.quantity }}</span> </h4>
+                <h3>₹{{order.total_price}}</h3>
+            </div>
+            <!-- /.middle -->
+            <div class="right">
+                {% if not order.status == 'canceled' %}
+                <ul class="orders">
+                    <li>Booked</li>
+                    <li>shipped</li>
+                    <li>out for delivery</li>
+                    <li>delivered</li>
+                </ul>
+                {% else %}
+                <ul class="orders canceled">
+                    <li>Booked</li>
+                    <li>Cancelled</li>
+                </ul>
+                {% endif %}
+                {% if not order.status == 'canceled' %}
+                <ul id="status-order">
+                    {% if order.status == 'booked' %}
+                    <li><img src="{% static 'images/checked.png' %}" alt="booked"></li>
+                    <li><img src="{% static 'images/warning.png' %}" alt="shipped"></li>
+                    <li><img src="{% static 'images/warning.png' %}" alt="out_for_delivery"></li>
+                    <li><img src="{% static 'images/warning.png' %}" alt="delivered"></li>
+                    {% endif %}
+                    {% if order.status == 'shipped' %}
+                    <li><img src="{% static 'images/checked.png' %}" alt="booked"></li>
+                    <li><img src="{% static 'images/checked.png' %}" alt="shipped"></li>
+                    <li><img src="{% static 'images/warning.png' %}" alt="out_for_delivery"></li>
+                    <li><img src="{% static 'images/warning.png' %}" alt="delivered"></li>
+                    {% endif %}
+                    {% if order.status == 'out_for_delivery' %}
+                    <li><img src="{% static 'images/checked.png' %}" alt="booked"></li>
+                    <li><img src="{% static 'images/checked.png' %}" alt="shipped"></li>
+                    <li><img src="{% static 'images/checked.png' %}" alt="out_for_delivery"></li>
+                    <li><img src="{% static 'images/warning.png' %}" alt="delivered"></li>
+                    {% endif %}
+                    {% if order.status == 'delivered' %}
+                    <li><img src="{% static 'images/checked.png' %}" alt="booked"></li>
+                    <li><img src="{% static 'images/checked.png' %}" alt="shipped"></li>
+                    <li><img src="{% static 'images/checked.png' %}" alt="out_for_delivery"></li>
+                    <li><img src="{% static 'images/checked.png' %}" alt="delivered"></li>
+                    {% endif %}
+                </ul>
+                {% else %}
+                <ul id="canceled">
+                    <li><img src="{% static 'images/checked.png' %}" alt="booked"></li>
+                    <li><img src="{% static 'images/canceled.png' %}" alt="canceled"></li>
+                </ul>
+                {% endif %}
+                <ul class="no-style" >
+                    {% if not order.status == 'canceled'%}
+                    {% if order.status == 'booked' %}
+                    <li>{{ order.ordered_date|date:'F d' }}</li>
+                    {% endif %}
+                    {% if order.status == 'shipped' %}
+                    <li>{{ order.ordered_date|date:'F d' }}</li>
+                    <li>{{order.shipped_date|date:'F d'}}</li>
+                    {% endif %}
+                    {% if order.status == 'out_for_delivery' %}
+                    <li>{{ order.ordered_date|date:'F d' }}</li>
+                    <li>{{order.shipped_date|date:'F d'}}</li>
+                    <li>{{order.out_for_delivery_date|date:'F d'}}</li>
+                    {% endif %}
+                    {% if order.status == 'delivered' %}
+                    <li>{{ order.ordered_date|date:'F d' }}</li>
+                    <li>{{order.shipped_date|date:'F d'}}</li>
+                    <li>{{order.out_for_delivery_date|date:'F d'}}</li>
+                    <li>{{order.delivered_date|date:'F d'}}</li>
+                    {% endif %}
+                    {% else %}
+
+                    {% if order.status == 'canceled' %}
+                    <li>{{ order.ordered_date|date:'F d' }}</li>
+                    <li>{{order.cancelled_date|date:'F d'}}</li>
+                    {% endif %}
+
+                    {% endif %}
+                </ul>
+            </div>
+            <!-- /.right -->
+        </div>
+        <!-- /.bottom -->
+        {% if order.status == 'booked' or order.status == 'shipped' %}
+        <a href="{% url 'cart:cancel_order' id=order.id %}"  class="btn">Cancel Order</a>
+        {% endif %}
+    </div>
+</section>
+<!-- /#order_details -->
+
+{% endblock %}

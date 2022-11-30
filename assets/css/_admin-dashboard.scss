@@ -1,0 +1,86 @@
+#dashboard {
+    padding: 20px;
+    background-color: #d8d8d840;
+    border-radius: 30px;
+
+    & > h1 {
+        @include title;
+    }
+
+    & > .top-charts {
+        margin-bottom: 100px;
+
+        strong {
+            font-weight: 600;
+        }
+        & > ul {
+            display: flex;
+            // justify-content: space-between;
+            flex-wrap: wrap;
+            width: 100%;
+            gap: 30px;
+
+            & > li {
+                width: 48%;
+                display: flex;
+                align-items: center;
+                background-color: #dbdbdb99;
+                padding: 16px 30px;
+                cursor: pointer;
+                border-radius: 12px;
+                &:hover {
+                    box-shadow: 0 1px 12px 2px #aeaeae;
+                }
+
+                & > .left {
+                    margin-right: 20px;
+
+                    .img-wrapper {
+                        width: 75px;
+                        height: 75px;
+                        background-color: #ad6fff;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+
+                        & > img {
+                            width: 35px;
+                        }
+                    }
+                }
+                & > .right {
+                    & > h2 {
+                        font-size: 24px;
+                        font-weight: 600;
+                        // margin-bottom: 14px;
+                        color: $primary;
+                    }
+                    & > h4 {
+                        font-size: 21px;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+    & > .bottom-charts {
+        display: block;
+        width: 100%;
+
+        h1 {
+            @include title;
+        }
+        .hero-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                margin: 0 auto;
+                width: 50%;
+            }
+        }
+    }
+}

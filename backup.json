@@ -1,0 +1,2406 @@
+[
+    {
+        "model": "admin.logentry",
+        "pk": 1,
+        "fields": {
+            "action_time": "2022-07-26T16:40:52.677Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "d0e337b9-b1dc-4509-a85c-3bb91b9dbb7f",
+            "object_repr": "Safwan",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 2,
+        "fields": {
+            "action_time": "2022-07-26T16:40:59.489Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "1",
+            "object_repr": "Safwan",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 3,
+        "fields": {
+            "action_time": "2022-07-26T16:41:06.937Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "1",
+            "object_repr": "Safwan",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 4,
+        "fields": {
+            "action_time": "2022-07-26T16:41:57.285Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "0c19925d-1343-4473-80fe-9fe0ef844049",
+            "object_repr": "IPhone 13 Pro with 30MP camera and 256GB storage",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 5,
+        "fields": {
+            "action_time": "2022-07-26T16:49:30.072Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "ca353394-eed8-4ccf-b6c2-0db9a0d51097",
+            "object_repr": "Smart phone with 30MP camera and 256GB storage",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 6,
+        "fields": {
+            "action_time": "2022-07-26T16:51:23.362Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "2",
+            "object_repr": "2",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 7,
+        "fields": {
+            "action_time": "2022-07-26T16:51:23.504Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "1",
+            "object_repr": "1",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 8,
+        "fields": {
+            "action_time": "2022-07-26T16:58:45.999Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "325bcbe4-88f0-461c-aca8-af1e9a2b76f9",
+            "object_repr": "325bcbe4-88f0-461c-aca8-af1e9a2b76f9",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 9,
+        "fields": {
+            "action_time": "2022-07-26T17:00:03.420Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "325bcbe4-88f0-461c-aca8-af1e9a2b76f9",
+            "object_repr": "325bcbe4-88f0-461c-aca8-af1e9a2b76f9",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 10,
+        "fields": {
+            "action_time": "2022-07-26T17:01:23.602Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "fb5f9b4f-7714-4389-8e65-8cb63b18334c",
+            "object_repr": "fb5f9b4f-7714-4389-8e65-8cb63b18334c",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 11,
+        "fields": {
+            "action_time": "2022-07-26T17:01:23.741Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "325bcbe4-88f0-461c-aca8-af1e9a2b76f9",
+            "object_repr": "325bcbe4-88f0-461c-aca8-af1e9a2b76f9",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 12,
+        "fields": {
+            "action_time": "2022-07-26T17:01:33.119Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "ca353394-eed8-4ccf-b6c2-0db9a0d51097",
+            "object_repr": "Smart phone with 30MP camera and 256GB storage",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 13,
+        "fields": {
+            "action_time": "2022-07-26T17:01:33.266Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "0c19925d-1343-4473-80fe-9fe0ef844049",
+            "object_repr": "IPhone 13 Pro with 30MP camera and 256GB storage",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 14,
+        "fields": {
+            "action_time": "2022-07-26T17:03:28.898Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "1",
+            "object_repr": "IPhone 13 Pro with 30MP camera and 256GB storage",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 15,
+        "fields": {
+            "action_time": "2022-07-27T03:50:23.292Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "1",
+            "object_repr": "IPhone 13 Pro with 30MP camera and 256GB storage",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 16,
+        "fields": {
+            "action_time": "2022-07-27T03:51:46.118Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "2",
+            "object_repr": "IPhone 13 Pro with 30MP camera and 256GB storage",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 17,
+        "fields": {
+            "action_time": "2022-07-27T03:54:03.824Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "3",
+            "object_repr": "Smart phone with 30MP camera and 256GB storage",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 18,
+        "fields": {
+            "action_time": "2022-07-27T03:55:45.486Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "4",
+            "object_repr": "Toy van | Remote controllable toy van",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 19,
+        "fields": {
+            "action_time": "2022-07-27T03:56:13.843Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "3",
+            "object_repr": "3",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 20,
+        "fields": {
+            "action_time": "2022-07-27T04:54:45.789Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "21",
+            "object_repr": "21",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 21,
+        "fields": {
+            "action_time": "2022-07-27T04:54:45.940Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "20",
+            "object_repr": "20",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 22,
+        "fields": {
+            "action_time": "2022-07-27T04:54:46.001Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "19",
+            "object_repr": "19",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 23,
+        "fields": {
+            "action_time": "2022-07-27T04:54:46.060Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "18",
+            "object_repr": "18",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 24,
+        "fields": {
+            "action_time": "2022-07-27T04:54:46.122Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "17",
+            "object_repr": "17",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 25,
+        "fields": {
+            "action_time": "2022-07-27T04:54:46.187Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "16",
+            "object_repr": "16",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 26,
+        "fields": {
+            "action_time": "2022-07-27T04:54:46.251Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "15",
+            "object_repr": "15",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 27,
+        "fields": {
+            "action_time": "2022-07-27T04:54:46.306Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "14",
+            "object_repr": "14",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 28,
+        "fields": {
+            "action_time": "2022-07-27T04:54:46.369Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "13",
+            "object_repr": "13",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 29,
+        "fields": {
+            "action_time": "2022-07-27T04:54:46.430Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "12",
+            "object_repr": "12",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 30,
+        "fields": {
+            "action_time": "2022-07-27T04:54:46.490Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "11",
+            "object_repr": "11",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 31,
+        "fields": {
+            "action_time": "2022-07-27T04:54:46.540Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "10",
+            "object_repr": "10",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 32,
+        "fields": {
+            "action_time": "2022-07-27T04:54:46.591Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "9",
+            "object_repr": "9",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 33,
+        "fields": {
+            "action_time": "2022-07-27T04:54:46.652Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "8",
+            "object_repr": "8",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 34,
+        "fields": {
+            "action_time": "2022-07-27T04:54:46.707Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "7",
+            "object_repr": "7",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 35,
+        "fields": {
+            "action_time": "2022-07-27T04:54:46.775Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "6",
+            "object_repr": "6",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 36,
+        "fields": {
+            "action_time": "2022-07-27T04:54:46.836Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "5",
+            "object_repr": "5",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 37,
+        "fields": {
+            "action_time": "2022-07-27T04:54:46.887Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "4",
+            "object_repr": "4",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 38,
+        "fields": {
+            "action_time": "2022-07-27T05:04:08.528Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "24",
+            "object_repr": "24",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 39,
+        "fields": {
+            "action_time": "2022-07-27T05:04:08.678Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "23",
+            "object_repr": "23",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 40,
+        "fields": {
+            "action_time": "2022-07-27T05:04:08.737Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "22",
+            "object_repr": "22",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 41,
+        "fields": {
+            "action_time": "2022-07-27T14:49:44.304Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "d0e337b9-b1dc-4509-a85c-3bb91b9dbb7f",
+            "object_repr": "Safwan p",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 42,
+        "fields": {
+            "action_time": "2022-07-27T14:50:43.146Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "d0e337b9-b1dc-4509-a85c-3bb91b9dbb7f",
+            "object_repr": "SAFWAN",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Address\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 43,
+        "fields": {
+            "action_time": "2022-07-27T14:51:12.555Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "d0e337b9-b1dc-4509-a85c-3bb91b9dbb7f",
+            "object_repr": "SAFWAN",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Address\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 44,
+        "fields": {
+            "action_time": "2022-07-29T02:29:10.579Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "d0e337b9-b1dc-4509-a85c-3bb91b9dbb7f",
+            "object_repr": "Safwan",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 45,
+        "fields": {
+            "action_time": "2022-08-01T05:21:03.007Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "34",
+            "object_repr": "34",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 46,
+        "fields": {
+            "action_time": "2022-08-01T05:22:44.233Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "34",
+            "object_repr": "34",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 47,
+        "fields": {
+            "action_time": "2022-08-01T05:23:53.832Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "34",
+            "object_repr": "34",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 48,
+        "fields": {
+            "action_time": "2022-08-01T05:28:48.062Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "34",
+            "object_repr": "34",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 49,
+        "fields": {
+            "action_time": "2022-08-01T05:30:44.278Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "34",
+            "object_repr": "34",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 50,
+        "fields": {
+            "action_time": "2022-08-01T06:20:03.837Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "32",
+            "object_repr": "32",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 51,
+        "fields": {
+            "action_time": "2022-08-01T06:20:15.190Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "32",
+            "object_repr": "32",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 52,
+        "fields": {
+            "action_time": "2022-08-01T06:20:24.563Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "32",
+            "object_repr": "32",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 53,
+        "fields": {
+            "action_time": "2022-08-01T06:20:36.217Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "32",
+            "object_repr": "32",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 54,
+        "fields": {
+            "action_time": "2022-08-01T06:23:12.996Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "32",
+            "object_repr": "32",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 55,
+        "fields": {
+            "action_time": "2022-08-01T06:31:23.401Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "32",
+            "object_repr": "32",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 56,
+        "fields": {
+            "action_time": "2022-08-01T06:34:32.626Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "32",
+            "object_repr": "32",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 57,
+        "fields": {
+            "action_time": "2022-08-01T06:35:28.517Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "32",
+            "object_repr": "32",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 58,
+        "fields": {
+            "action_time": "2022-08-01T06:35:37.674Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "32",
+            "object_repr": "32",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 59,
+        "fields": {
+            "action_time": "2022-08-01T06:38:30.894Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "32",
+            "object_repr": "32",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 60,
+        "fields": {
+            "action_time": "2022-08-01T06:43:52.569Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "31",
+            "object_repr": "31",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 61,
+        "fields": {
+            "action_time": "2022-08-01T07:05:05.833Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "34",
+            "object_repr": "34",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 62,
+        "fields": {
+            "action_time": "2022-08-01T07:13:13.970Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "35",
+            "object_repr": "35",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 63,
+        "fields": {
+            "action_time": "2022-08-01T07:24:51.590Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "36",
+            "object_repr": "36",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 64,
+        "fields": {
+            "action_time": "2022-08-01T07:27:07.388Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "36",
+            "object_repr": "36",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 65,
+        "fields": {
+            "action_time": "2022-08-01T07:27:17.311Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "36",
+            "object_repr": "36",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 66,
+        "fields": {
+            "action_time": "2022-08-01T07:27:26.460Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "36",
+            "object_repr": "36",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 67,
+        "fields": {
+            "action_time": "2022-08-01T07:29:23.773Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "36",
+            "object_repr": "36",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 68,
+        "fields": {
+            "action_time": "2022-08-01T11:59:20.391Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "37",
+            "object_repr": "37",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 69,
+        "fields": {
+            "action_time": "2022-08-01T11:59:21.655Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "36",
+            "object_repr": "36",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 70,
+        "fields": {
+            "action_time": "2022-08-01T11:59:21.704Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "35",
+            "object_repr": "35",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 71,
+        "fields": {
+            "action_time": "2022-08-01T11:59:21.765Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "34",
+            "object_repr": "34",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 72,
+        "fields": {
+            "action_time": "2022-08-01T11:59:21.828Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "33",
+            "object_repr": "33",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 73,
+        "fields": {
+            "action_time": "2022-08-01T11:59:21.889Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "32",
+            "object_repr": "32",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 74,
+        "fields": {
+            "action_time": "2022-08-01T11:59:21.940Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "31",
+            "object_repr": "31",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 75,
+        "fields": {
+            "action_time": "2022-08-01T11:59:21.990Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "30",
+            "object_repr": "30",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 76,
+        "fields": {
+            "action_time": "2022-08-01T11:59:22.051Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "29",
+            "object_repr": "29",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 77,
+        "fields": {
+            "action_time": "2022-08-01T11:59:22.101Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "28",
+            "object_repr": "28",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 78,
+        "fields": {
+            "action_time": "2022-08-01T11:59:22.163Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "27",
+            "object_repr": "27",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 79,
+        "fields": {
+            "action_time": "2022-08-01T11:59:22.224Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "26",
+            "object_repr": "26",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 80,
+        "fields": {
+            "action_time": "2022-08-01T11:59:22.274Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "25",
+            "object_repr": "25",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 81,
+        "fields": {
+            "action_time": "2022-08-01T11:59:54.945Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "38",
+            "object_repr": "38",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 82,
+        "fields": {
+            "action_time": "2022-08-01T12:00:05.279Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "38",
+            "object_repr": "38",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 83,
+        "fields": {
+            "action_time": "2022-08-01T12:00:15.397Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "38",
+            "object_repr": "38",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 84,
+        "fields": {
+            "action_time": "2022-08-01T12:00:26.270Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "38",
+            "object_repr": "38",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 85,
+        "fields": {
+            "action_time": "2022-08-01T12:00:35.765Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "38",
+            "object_repr": "38",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 86,
+        "fields": {
+            "action_time": "2022-08-01T12:00:46.949Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "38",
+            "object_repr": "38",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 87,
+        "fields": {
+            "action_time": "2022-08-01T12:21:27.136Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "2",
+            "object_repr": "hiyasusman",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 88,
+        "fields": {
+            "action_time": "2022-08-04T05:57:45.982Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "4",
+            "object_repr": "Toy van | Remote controllable toy van",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Margin\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 89,
+        "fields": {
+            "action_time": "2022-08-04T05:57:53.855Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "3",
+            "object_repr": "Smart phone with 30MP camera and 256GB storage",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Margin\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 90,
+        "fields": {
+            "action_time": "2022-08-04T05:58:13.451Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "3",
+            "object_repr": "Smart phone with 30MP camera and 256GB storage",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Margin\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 91,
+        "fields": {
+            "action_time": "2022-08-04T05:58:28.089Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "2",
+            "object_repr": "IPhone 13 Pro with 30MP camera and 256GB storage",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Margin\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 92,
+        "fields": {
+            "action_time": "2022-08-04T06:03:35.543Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "39",
+            "object_repr": "39",
+            "action_flag": 2,
+            "change_message": "[]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 93,
+        "fields": {
+            "action_time": "2022-08-04T06:04:14.526Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "39",
+            "object_repr": "39",
+            "action_flag": 2,
+            "change_message": "[]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 94,
+        "fields": {
+            "action_time": "2022-08-04T06:04:19.161Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "38",
+            "object_repr": "38",
+            "action_flag": 2,
+            "change_message": "[]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 95,
+        "fields": {
+            "action_time": "2022-08-05T06:46:02.074Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "41",
+            "object_repr": "41",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 96,
+        "fields": {
+            "action_time": "2022-08-05T14:57:23.136Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "b307a6d0-3ea8-4829-8541-c1b67e7870dc",
+            "object_repr": "Hiyas",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 97,
+        "fields": {
+            "action_time": "2022-08-05T14:57:23.276Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "69a44254-5588-477d-802f-450f581365a7",
+            "object_repr": "Jouhara",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 98,
+        "fields": {
+            "action_time": "2022-08-05T14:58:08.658Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "3",
+            "object_repr": "hiyasusman",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 99,
+        "fields": {
+            "action_time": "2022-08-05T14:58:08.719Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "4",
+            "object_repr": "jouhararahees",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 100,
+        "fields": {
+            "action_time": "2022-08-05T15:00:51.088Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "1",
+            "object_repr": "safwan",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 101,
+        "fields": {
+            "action_time": "2022-08-05T15:48:15.053Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "4",
+            "object_repr": "Toy van | Remote controllable toy van",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Total quantity\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 102,
+        "fields": {
+            "action_time": "2022-08-06T06:35:24.558Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "1",
+            "object_repr": "safwan",
+            "action_flag": 2,
+            "change_message": "[]"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 1,
+        "fields": {
+            "name": "Can add log entry",
+            "content_type": 1,
+            "codename": "add_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 2,
+        "fields": {
+            "name": "Can change log entry",
+            "content_type": 1,
+            "codename": "change_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 3,
+        "fields": {
+            "name": "Can delete log entry",
+            "content_type": 1,
+            "codename": "delete_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 4,
+        "fields": {
+            "name": "Can view log entry",
+            "content_type": 1,
+            "codename": "view_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 5,
+        "fields": {
+            "name": "Can add permission",
+            "content_type": 2,
+            "codename": "add_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 6,
+        "fields": {
+            "name": "Can change permission",
+            "content_type": 2,
+            "codename": "change_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 7,
+        "fields": {
+            "name": "Can delete permission",
+            "content_type": 2,
+            "codename": "delete_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 8,
+        "fields": {
+            "name": "Can view permission",
+            "content_type": 2,
+            "codename": "view_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 9,
+        "fields": {
+            "name": "Can add group",
+            "content_type": 3,
+            "codename": "add_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 10,
+        "fields": {
+            "name": "Can change group",
+            "content_type": 3,
+            "codename": "change_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 11,
+        "fields": {
+            "name": "Can delete group",
+            "content_type": 3,
+            "codename": "delete_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 12,
+        "fields": {
+            "name": "Can view group",
+            "content_type": 3,
+            "codename": "view_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 13,
+        "fields": {
+            "name": "Can add user",
+            "content_type": 4,
+            "codename": "add_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 14,
+        "fields": {
+            "name": "Can change user",
+            "content_type": 4,
+            "codename": "change_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 15,
+        "fields": {
+            "name": "Can delete user",
+            "content_type": 4,
+            "codename": "delete_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 16,
+        "fields": {
+            "name": "Can view user",
+            "content_type": 4,
+            "codename": "view_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 17,
+        "fields": {
+            "name": "Can add content type",
+            "content_type": 5,
+            "codename": "add_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 18,
+        "fields": {
+            "name": "Can change content type",
+            "content_type": 5,
+            "codename": "change_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 19,
+        "fields": {
+            "name": "Can delete content type",
+            "content_type": 5,
+            "codename": "delete_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 20,
+        "fields": {
+            "name": "Can view content type",
+            "content_type": 5,
+            "codename": "view_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 21,
+        "fields": {
+            "name": "Can add session",
+            "content_type": 6,
+            "codename": "add_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 22,
+        "fields": {
+            "name": "Can change session",
+            "content_type": 6,
+            "codename": "change_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 23,
+        "fields": {
+            "name": "Can delete session",
+            "content_type": 6,
+            "codename": "delete_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 24,
+        "fields": {
+            "name": "Can view session",
+            "content_type": 6,
+            "codename": "view_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 25,
+        "fields": {
+            "name": "Can add cart",
+            "content_type": 7,
+            "codename": "add_cart"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 26,
+        "fields": {
+            "name": "Can change cart",
+            "content_type": 7,
+            "codename": "change_cart"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 27,
+        "fields": {
+            "name": "Can delete cart",
+            "content_type": 7,
+            "codename": "delete_cart"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 28,
+        "fields": {
+            "name": "Can view cart",
+            "content_type": 7,
+            "codename": "view_cart"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 29,
+        "fields": {
+            "name": "Can add cart item",
+            "content_type": 8,
+            "codename": "add_cartitem"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 30,
+        "fields": {
+            "name": "Can change cart item",
+            "content_type": 8,
+            "codename": "change_cartitem"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 31,
+        "fields": {
+            "name": "Can delete cart item",
+            "content_type": 8,
+            "codename": "delete_cartitem"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 32,
+        "fields": {
+            "name": "Can view cart item",
+            "content_type": 8,
+            "codename": "view_cartitem"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 33,
+        "fields": {
+            "name": "Can add order",
+            "content_type": 9,
+            "codename": "add_order"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 34,
+        "fields": {
+            "name": "Can change order",
+            "content_type": 9,
+            "codename": "change_order"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 35,
+        "fields": {
+            "name": "Can delete order",
+            "content_type": 9,
+            "codename": "delete_order"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 36,
+        "fields": {
+            "name": "Can view order",
+            "content_type": 9,
+            "codename": "view_order"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 37,
+        "fields": {
+            "name": "Can add product",
+            "content_type": 10,
+            "codename": "add_product"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 38,
+        "fields": {
+            "name": "Can change product",
+            "content_type": 10,
+            "codename": "change_product"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 39,
+        "fields": {
+            "name": "Can delete product",
+            "content_type": 10,
+            "codename": "delete_product"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 40,
+        "fields": {
+            "name": "Can view product",
+            "content_type": 10,
+            "codename": "view_product"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 41,
+        "fields": {
+            "name": "Can add order item",
+            "content_type": 11,
+            "codename": "add_orderitem"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 42,
+        "fields": {
+            "name": "Can change order item",
+            "content_type": 11,
+            "codename": "change_orderitem"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 43,
+        "fields": {
+            "name": "Can delete order item",
+            "content_type": 11,
+            "codename": "delete_orderitem"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 44,
+        "fields": {
+            "name": "Can view order item",
+            "content_type": 11,
+            "codename": "view_orderitem"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 45,
+        "fields": {
+            "name": "Can add customer",
+            "content_type": 12,
+            "codename": "add_customer"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 46,
+        "fields": {
+            "name": "Can change customer",
+            "content_type": 12,
+            "codename": "change_customer"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 47,
+        "fields": {
+            "name": "Can delete customer",
+            "content_type": 12,
+            "codename": "delete_customer"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 48,
+        "fields": {
+            "name": "Can view customer",
+            "content_type": 12,
+            "codename": "view_customer"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$320000$3ZEHS1hMoC8uhlriC6Wop4$/53xhfTChgJHLgeYaJryIg1+nByeXG9wo5mHtvP7Y5g=",
+            "last_login": "2022-08-09T11:09:38.734Z",
+            "is_superuser": true,
+            "username": "safwan",
+            "first_name": "Safwan",
+            "last_name": "Taliparamba",
+            "email": "safwan@example.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2022-07-26T16:40:11Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 5,
+        "fields": {
+            "password": "pbkdf2_sha256$320000$Iabp27IzGwqYUckqNGA6IX$U9CKtYOPiUjGgQRraLgwh8h4on6fXqLc3sz/pXr0LT0=",
+            "last_login": "2022-08-08T08:51:39.106Z",
+            "is_superuser": false,
+            "username": "hiyasusman",
+            "first_name": "Hiyas",
+            "last_name": "",
+            "email": "hiyas@example.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2022-08-05T14:58:28.590Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 6,
+        "fields": {
+            "password": "pbkdf2_sha256$320000$fh5Ld3knkBT5Zy2i7YQ0rA$wE8OVPqJ57PsppEcBBYZpRWhvqMieCvSTHRgK5QV4c0=",
+            "last_login": "2022-08-05T15:01:13.048Z",
+            "is_superuser": false,
+            "username": "jubairjubi",
+            "first_name": "Jubair",
+            "last_name": "",
+            "email": "jubi@example.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2022-08-05T15:01:11.566Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 7,
+        "fields": {
+            "password": "pbkdf2_sha256$320000$84qmwpHyvQ8dX9yWifvzN9$KriBjI1AV/kqsmmjpFweIknz5SYytF4QTmLDVOx6Ewc=",
+            "last_login": "2022-08-08T08:48:49.084Z",
+            "is_superuser": false,
+            "username": "rufaidduppi",
+            "first_name": "Rufaid",
+            "last_name": "",
+            "email": "rufaid@exmple.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2022-08-08T08:48:47.531Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 8,
+        "fields": {
+            "password": "pbkdf2_sha256$320000$cffisMP3RUT48lx97nX6M8$uyqEsE6WtXN3MfvkWNik1qaVt2qAJKjCbGOZC4TuGxQ=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "uzumakinaruto",
+            "first_name": "Naruto",
+            "last_name": "",
+            "email": "uzumakinaruto@example.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2022-08-08T08:49:10.701Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 1,
+        "fields": { "app_label": "admin", "model": "logentry" }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 2,
+        "fields": { "app_label": "auth", "model": "permission" }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 3,
+        "fields": { "app_label": "auth", "model": "group" }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 4,
+        "fields": { "app_label": "auth", "model": "user" }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 5,
+        "fields": { "app_label": "contenttypes", "model": "contenttype" }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 6,
+        "fields": { "app_label": "sessions", "model": "session" }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 7,
+        "fields": { "app_label": "cart", "model": "cart" }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 8,
+        "fields": { "app_label": "cart", "model": "cartitem" }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 9,
+        "fields": { "app_label": "products", "model": "order" }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 10,
+        "fields": { "app_label": "products", "model": "product" }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 11,
+        "fields": { "app_label": "products", "model": "orderitem" }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 12,
+        "fields": { "app_label": "users", "model": "customer" }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "0wvhdxu1psrxesw5upjuhbilyv4tr29y",
+        "fields": {
+            "session_data": "e30:1oIWLc:7GvuvyhApsqmAU2JMfeV57C_FqLq-mDIPQXm2acY5W0",
+            "expire_date": "2022-08-15T14:24:44.999Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "1z2t178u1duv3cnjiz6pxmizh5nb07c7",
+        "fields": {
+            "session_data": ".eJxVjMEOwiAQRP-FsyEQKIJH734D2WUXqRpISnsy_rs06UFvM_Nm5i0ibGuJW-clziQuQovTb4aQnlx3QA-o9yZTq-syo9wr8qBd3hrx63p0_w4K9DLWE1ufzt6zsjYgBECtmLPh7FxGZMrGkEoA6GwgkyeX03Ba-xCGYvH5AhOlOb0:1oKyUL:OaCmfmlVJx48pX-JDWy7jWPl6zv4B9n3EZU32SOZ72w",
+            "expire_date": "2022-08-22T08:51:53.559Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "a4ztowllz6qizjfrzoaj9atyxlnacxmh",
+        "fields": {
+            "session_data": "e30:1oIWT9:BJ0go-orw8npXmofLdZLrJH6bQRGkDBErNWUMqeIjfc",
+            "expire_date": "2022-08-15T14:32:31.395Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "gcoc7qyuds8i9wlmawdfa6dmgq4ubvpp",
+        "fields": {
+            "session_data": "e30:1oIUyZ:DuXrzcERFlz4R3M9jVO_Sf5Z9-YmIbELkH2MflGpTPw",
+            "expire_date": "2022-08-15T12:56:51.298Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "l371p9zkbenbo1b286yv9ekk3lt8j2jv",
+        "fields": {
+            "session_data": ".eJxVjMEOwiAQRP-FsyEQKIJH734D2WUXqRpISnsy_rs06UFvM_Nm5i0ibGuJW-clziQuQovTb4aQnlx3QA-o9yZTq-syo9wr8qBd3hrx63p0_w4K9DLWE1ufzt6zsjYgBECtmLPh7FxGZMrGkEoA6GwgkyeX03Ba-xCGYvH5AhOlOb0:1oINoU:d1pVVVwkEakiNeeyWcsrDgzNtT9Th5K6C1nR0xRFvTE",
+            "expire_date": "2022-08-15T05:17:58.211Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "l8ycfk3w93uhvikrn6kjyvxvs2vw48df",
+        "fields": {
+            "session_data": "e30:1oIUxj:ekv3QbSRx57GpmWsNXdGIkDYte6Dx-2SfgrnHVG0WNA",
+            "expire_date": "2022-08-15T12:55:59.072Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "mhnozs6k7baiqec71idjnqfti5w196sg",
+        "fields": {
+            "session_data": ".eJxVjMEOwiAQRP-FsyEQKIJH734D2WUXqRpISnsy_rs06UFvM_Nm5i0ibGuJW-clziQuQovTb4aQnlx3QA-o9yZTq-syo9wr8qBd3hrx63p0_w4K9DLWE1ufzt6zsjYgBECtmLPh7FxGZMrGkEoA6GwgkyeX03Ba-xCGYvH5AhOlOb0:1oLN7C:oil151emk18_VNWjzzCq4OPIgVzfGlhQWtnEQHHfeNg",
+            "expire_date": "2022-08-23T11:09:38.785Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "rrxkp75wmrgha9tb9zcn9z08f25wm0yo",
+        "fields": {
+            "session_data": ".eJxVjMEOwiAQRP-FsyEQKIJH734D2WUXqRpISnsy_rs06UFvM_Nm5i0ibGuJW-clziQuQovTb4aQnlx3QA-o9yZTq-syo9wr8qBd3hrx63p0_w4K9DLWE1ufzt6zsjYgBECtmLPh7FxGZMrGkEoA6GwgkyeX03Ba-xCGYvH5AhOlOb0:1oJzXt:-RmsRObMoNo2Z0WUFRGvutjT831wF-BicMqgeRGxlkA",
+            "expire_date": "2022-08-19T15:47:29.168Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "rvs10s501n5e92d4i6r9fz2fm1wjauzv",
+        "fields": {
+            "session_data": "e30:1oIV07:28fRscKVy3DsFCUG0vVV2Wnl7Ub2Q0gaKrGuLNNF4QE",
+            "expire_date": "2022-08-15T12:58:27.120Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "vh2b5msn13s41n3rh5yuwvr59mv28sub",
+        "fields": {
+            "session_data": ".eJxVjMEOwiAQRP-FsyEQKIJH734D2WUXqRpISnsy_rs06UFvM_Nm5i0ibGuJW-clziQuQovTb4aQnlx3QA-o9yZTq-syo9wr8qBd3hrx63p0_w4K9DLWE1ufzt6zsjYgBECtmLPh7FxGZMrGkEoA6GwgkyeX03Ba-xCGYvH5AhOlOb0:1oGNbh:7O1JwnAbc77-VvtNd_0z_vi2gcTHqMh-9xlMDVVsbwA",
+            "expire_date": "2022-08-09T16:40:29.799Z"
+        }
+    },
+    {
+        "model": "cart.cart",
+        "pk": 1,
+        "fields": {
+            "total_price": 0,
+            "customer": "d0e337b9-b1dc-4509-a85c-3bb91b9dbb7f"
+        }
+    },
+    {
+        "model": "cart.cart",
+        "pk": 5,
+        "fields": {
+            "total_price": 0,
+            "customer": "58a6b4d3-b164-4d35-b575-a5241d9ec3c1"
+        }
+    },
+    {
+        "model": "cart.cart",
+        "pk": 6,
+        "fields": {
+            "total_price": 0,
+            "customer": "fccacb36-4aaa-4ab5-9c86-1a70fe10a533"
+        }
+    },
+    {
+        "model": "cart.cart",
+        "pk": 7,
+        "fields": {
+            "total_price": 0,
+            "customer": "a6857717-78c0-4433-8ae3-ad4359e39236"
+        }
+    },
+    {
+        "model": "cart.cartitem",
+        "pk": 17,
+        "fields": { "quantity": 1, "product": 4, "total_price": 100, "cart": 1 }
+    },
+    {
+        "model": "cart.cartitem",
+        "pk": 18,
+        "fields": {
+            "quantity": 1,
+            "product": 3,
+            "total_price": 1500,
+            "cart": 1
+        }
+    },
+    {
+        "model": "cart.cartitem",
+        "pk": 19,
+        "fields": {
+            "quantity": 1,
+            "product": 2,
+            "total_price": 1000,
+            "cart": 1
+        }
+    },
+    {
+        "model": "cart.cartitem",
+        "pk": 20,
+        "fields": { "quantity": 1, "product": 4, "total_price": 100, "cart": 7 }
+    },
+    {
+        "model": "cart.cartitem",
+        "pk": 21,
+        "fields": {
+            "quantity": 1,
+            "product": 2,
+            "total_price": 1000,
+            "cart": 7
+        }
+    },
+    {
+        "model": "cart.cartitem",
+        "pk": 22,
+        "fields": { "quantity": 1, "product": 4, "total_price": 100, "cart": 5 }
+    },
+    {
+        "model": "cart.cartitem",
+        "pk": 23,
+        "fields": {
+            "quantity": 1,
+            "product": 2,
+            "total_price": 1000,
+            "cart": 5
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 2,
+        "fields": {
+            "name": "IPhone 13 Pro with 30MP camera and 256GB storage",
+            "image": "products/mobile.jfif",
+            "short_description": "IPhone 13 Pro with 30MP camera and 256GB storage",
+            "description": "IPhone 13 Pro with 30MP camera and 256GB storage\r\n\r\nIPhone 13 Pro with 30MP camera and 256GB storageIPhone 13 Pro with 30MP camera and 256GB storageIPhone 13 Pro with 30MP camera and 256GB storageIPhone 13 Pro with 30MP camera and 256GB storageIPhone 13 Pro with 30MP camera and 256GB storageIPhone 13 Pro with 30MP camera and 256GB storageIPhone 13 Pro with 30MP camera and 256GB storageIPhone 13 Pro with 30MP camera and 256GB storage\r\n\r\nIPhone 13 Pro with 30MP camera and 256GB storageIPhone 13 Pro with 30MP camera and 256GB storage",
+            "price": 1000,
+            "margin": 75,
+            "total_price": 1075,
+            "total_quantity": 100,
+            "is_out_of_stock": false,
+            "added_date": "2022-07-27T03:50:45Z",
+            "category": "electronics",
+            "delivery_charge": 40,
+            "discount": 0
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 3,
+        "fields": {
+            "name": "Smart phone with 30MP camera and 256GB storage",
+            "image": "products/mobile-demo.jfif",
+            "short_description": "Smart phone with 30MP camera and 256GB storage",
+            "description": "Smart phone with 30MP camera and 256GB storageSmart phone with 30MP camera and 256GB storage\r\n\r\nSmart phone with 30MP camera and 256GB storageSmart phone with 30MP camera and 256GB storageSmart phone with 30MP camera and 256GB storageSmart phone with 30MP camera and 256GB storageSmart phone with 30MP camera and 256GB storageSmart phone with 30MP camera and 256GB storageSmart phone with 30MP camera and 256GB storage\r\nSmart phone with 30MP camera and 256GB storage",
+            "price": 1500,
+            "margin": 100,
+            "total_price": 1600,
+            "total_quantity": 100,
+            "is_out_of_stock": false,
+            "added_date": "2022-07-27T03:53:20Z",
+            "category": "electronics",
+            "delivery_charge": 40,
+            "discount": 0
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 4,
+        "fields": {
+            "name": "Toy van | Remote controllable toy van",
+            "image": "products/van_life.jfif",
+            "short_description": "Toy van | Remote controllable toy van",
+            "description": "Toy van | Remote controllable toy vanToy van | Remote controllable toy van\r\nToy van | Remote controllable toy vanToy van | Remote controllable toy vanToy van | Remote controllable toy vanToy van | Remote controllable toy vanToy van | Remote controllable toy vanToy van | Remote controllable toy van\r\n\r\n\r\nToy van | Remote controllable toy vanToy van | Remote controllable toy van",
+            "price": 100,
+            "margin": 15,
+            "total_price": 115,
+            "total_quantity": 99,
+            "is_out_of_stock": false,
+            "added_date": "2022-07-27T03:54:26Z",
+            "category": "toys",
+            "delivery_charge": 40,
+            "discount": 0
+        }
+    },
+    {
+        "model": "products.order",
+        "pk": 1,
+        "fields": { "customer": "d0e337b9-b1dc-4509-a85c-3bb91b9dbb7f" }
+    },
+    {
+        "model": "products.order",
+        "pk": 5,
+        "fields": { "customer": "58a6b4d3-b164-4d35-b575-a5241d9ec3c1" }
+    },
+    {
+        "model": "products.order",
+        "pk": 6,
+        "fields": { "customer": "fccacb36-4aaa-4ab5-9c86-1a70fe10a533" }
+    },
+    {
+        "model": "products.order",
+        "pk": 7,
+        "fields": { "customer": "a6857717-78c0-4433-8ae3-ad4359e39236" }
+    },
+    {
+        "model": "products.orderitem",
+        "pk": 38,
+        "fields": {
+            "order": 1,
+            "product": 4,
+            "quantity": 1,
+            "address": "Parottakath jouharas house\r\nPulimparamba   taliparamba",
+            "payment_method": "cash_on_delivery",
+            "is_payed": true,
+            "ordered_date": "2022-08-01T11:59:29.490Z",
+            "is_canceled": false,
+            "total_price": 115,
+            "status": "canceled",
+            "shipped_date": "2022-08-01T11:59:54.933Z",
+            "out_for_delivery_date": "2022-08-01T12:00:26.257Z",
+            "delivered_date": "2022-08-01T12:00:35.754Z",
+            "cancelled_date": "2022-08-04T06:04:19.008Z"
+        }
+    },
+    {
+        "model": "products.orderitem",
+        "pk": 39,
+        "fields": {
+            "order": 1,
+            "product": 4,
+            "quantity": 1,
+            "address": "Parottakath jouharas house\r\nPulimparamba   taliparamba",
+            "payment_method": "cash_on_delivery",
+            "is_payed": true,
+            "ordered_date": "2022-08-04T06:02:45.912Z",
+            "is_canceled": false,
+            "total_price": 115,
+            "status": "booked",
+            "shipped_date": null,
+            "out_for_delivery_date": null,
+            "delivered_date": null,
+            "cancelled_date": null
+        }
+    },
+    {
+        "model": "products.orderitem",
+        "pk": 40,
+        "fields": {
+            "order": 1,
+            "product": 4,
+            "quantity": 1,
+            "address": "Parottakath jouharas house\r\nPulimparamba   taliparamba",
+            "payment_method": "cash_on_delivery",
+            "is_payed": true,
+            "ordered_date": "2022-08-04T06:04:27.629Z",
+            "is_canceled": false,
+            "total_price": 115,
+            "status": "booked",
+            "shipped_date": null,
+            "out_for_delivery_date": null,
+            "delivered_date": null,
+            "cancelled_date": null
+        }
+    },
+    {
+        "model": "products.orderitem",
+        "pk": 41,
+        "fields": {
+            "order": 1,
+            "product": 4,
+            "quantity": 1,
+            "address": "Parottakath jouharas house\r\nPulimparamba   taliparamba",
+            "payment_method": "cash_on_delivery",
+            "is_payed": true,
+            "ordered_date": "2022-08-04T06:04:27.868Z",
+            "is_canceled": false,
+            "total_price": 115,
+            "status": "out_for_delivery",
+            "shipped_date": null,
+            "out_for_delivery_date": "2022-08-05T06:46:01.848Z",
+            "delivered_date": null,
+            "cancelled_date": null
+        }
+    },
+    {
+        "model": "products.orderitem",
+        "pk": 42,
+        "fields": {
+            "order": 1,
+            "product": 4,
+            "quantity": 1,
+            "address": "Parottakath jouharas house\r\nPulimparamba   taliparamba",
+            "payment_method": "upi_payment",
+            "is_payed": true,
+            "ordered_date": "2022-08-05T14:42:24.752Z",
+            "is_canceled": false,
+            "total_price": 115,
+            "status": "booked",
+            "shipped_date": null,
+            "out_for_delivery_date": null,
+            "delivered_date": null,
+            "cancelled_date": null
+        }
+    },
+    {
+        "model": "products.orderitem",
+        "pk": 43,
+        "fields": {
+            "order": 1,
+            "product": 4,
+            "quantity": 1,
+            "address": "Parottakath jouharas house\r\nPulimparamba   taliparamba",
+            "payment_method": "cash_on_delivery",
+            "is_payed": true,
+            "ordered_date": "2022-08-05T14:44:07.131Z",
+            "is_canceled": false,
+            "total_price": 115,
+            "status": "booked",
+            "shipped_date": null,
+            "out_for_delivery_date": null,
+            "delivered_date": null,
+            "cancelled_date": null
+        }
+    },
+    {
+        "model": "products.orderitem",
+        "pk": 44,
+        "fields": {
+            "order": 1,
+            "product": 4,
+            "quantity": 1,
+            "address": "Parottakath jouharas house\r\nPulimparamba   taliparamba",
+            "payment_method": "cash_on_delivery",
+            "is_payed": true,
+            "ordered_date": "2022-08-05T14:44:26.562Z",
+            "is_canceled": false,
+            "total_price": 115,
+            "status": "booked",
+            "shipped_date": null,
+            "out_for_delivery_date": null,
+            "delivered_date": null,
+            "cancelled_date": null
+        }
+    },
+    {
+        "model": "products.orderitem",
+        "pk": 45,
+        "fields": {
+            "order": 1,
+            "product": 4,
+            "quantity": 1,
+            "address": "Parottakath jouharas house\r\nPulimparamba   taliparamba",
+            "payment_method": "cash_on_delivery",
+            "is_payed": true,
+            "ordered_date": "2022-08-05T14:45:09.591Z",
+            "is_canceled": false,
+            "total_price": 115,
+            "status": "booked",
+            "shipped_date": null,
+            "out_for_delivery_date": null,
+            "delivered_date": null,
+            "cancelled_date": null
+        }
+    },
+    {
+        "model": "products.orderitem",
+        "pk": 46,
+        "fields": {
+            "order": 1,
+            "product": 4,
+            "quantity": 1,
+            "address": "Parottakath jouharas house\r\nPulimparamba   taliparamba",
+            "payment_method": "cash_on_delivery",
+            "is_payed": true,
+            "ordered_date": "2022-08-05T14:47:35.680Z",
+            "is_canceled": true,
+            "total_price": 115,
+            "status": "canceled",
+            "shipped_date": null,
+            "out_for_delivery_date": null,
+            "delivered_date": null,
+            "cancelled_date": "2022-08-05T14:47:52.679Z"
+        }
+    },
+    {
+        "model": "products.orderitem",
+        "pk": 48,
+        "fields": {
+            "order": 1,
+            "product": 4,
+            "quantity": 1,
+            "address": "Parottakath jouharas house\r\nPulimparamba   taliparamba",
+            "payment_method": "cash_on_delivery",
+            "is_payed": true,
+            "ordered_date": "2022-08-05T15:48:25.600Z",
+            "is_canceled": false,
+            "total_price": 115,
+            "status": "booked",
+            "shipped_date": null,
+            "out_for_delivery_date": null,
+            "delivered_date": null,
+            "cancelled_date": null
+        }
+    },
+    {
+        "model": "users.customer",
+        "pk": "58a6b4d3-b164-4d35-b575-a5241d9ec3c1",
+        "fields": {
+            "name": "Hiyas",
+            "user": 5,
+            "phone": null,
+            "address": null,
+            "is_admin": false,
+            "pin_code": 0,
+            "created_at": "2022-08-05T14:58:29.233Z"
+        }
+    },
+    {
+        "model": "users.customer",
+        "pk": "a6857717-78c0-4433-8ae3-ad4359e39236",
+        "fields": {
+            "name": "Rufaid",
+            "user": 7,
+            "phone": null,
+            "address": null,
+            "is_admin": false,
+            "pin_code": 0,
+            "created_at": "2022-08-08T08:48:48.441Z"
+        }
+    },
+    {
+        "model": "users.customer",
+        "pk": "d0e337b9-b1dc-4509-a85c-3bb91b9dbb7f",
+        "fields": {
+            "name": "Safwan",
+            "user": 1,
+            "phone": "7994720768",
+            "address": "Parottakath jouharas house\r\nPulimparamba   taliparamba",
+            "is_admin": true,
+            "pin_code": 670141,
+            "created_at": "2022-08-05T14:54:58.440Z"
+        }
+    },
+    {
+        "model": "users.customer",
+        "pk": "fccacb36-4aaa-4ab5-9c86-1a70fe10a533",
+        "fields": {
+            "name": "Jubair",
+            "user": 6,
+            "phone": "7994720767",
+            "address": "Parottakath jouharas house\r\nPulimparamba   taliparamba",
+            "is_admin": false,
+            "pin_code": 670141,
+            "created_at": "2022-08-05T15:01:12.248Z"
+        }
+    }
+]

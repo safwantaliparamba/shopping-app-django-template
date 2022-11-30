@@ -1,0 +1,34 @@
+<div id="admin-sidebar">
+    <h1>Manage</h1>
+    <ul>
+        <li>
+            <a
+                href="{% url 'superadmin:dashboard' %}"
+                class="btn {% if request.path == '/admin/dashboard/' %} active {% endif %}"
+                >home</a
+            >
+        </li>
+        <li>
+            <a
+                href="{% url 'superadmin:inventory' %}"
+                class="btn {% if request.path == '/admin/manage/inventory/' %} active {% endif %}"
+                >inventory</a
+            >
+        </li>
+        <li>
+            <a
+                href="{% url 'superadmin:users' %}"
+                class="btn {% if request.path == '/admin/manage/users/' %} active {% endif %}"
+                >users</a
+            >
+        </li>
+
+        <li>
+            <a
+                href="{% url 'superadmin:orders' %}"
+                class="btn {% if request.path == '/admin/manage/orders/' %} active {% endif %}"
+                >orders</a
+            >
+        </li>
+    </ul>
+</div>

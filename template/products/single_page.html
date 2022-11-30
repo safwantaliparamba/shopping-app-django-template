@@ -1,0 +1,22 @@
+{% extends "boilerplate/boilerplate.html" %} {% load static %}{% block content%}
+
+<section id="single_product">
+    <div class="wrapper">
+        <div class="left">
+            <img src="{{ product.image.url }}" alt="" />
+            <div class="btns">
+                <a href="{% url 'cart:add_to_cart' pro_id=product.id %}" class="add_to_cart btn">Add to Cart</a>
+                <a href="{% url 'cart:checkout' %}?pro_id={{product.id}}&quantity=1" class="buy_now btn">Buy Now</a>
+            </div>
+        </div>
+        <div class="right">
+            <h1 class="name">{{product.name}}</h1>
+            <a href="/?category={{product.category}}" class="btn">{{product.category}}</a>
+            <p class="description">{{ product.description }}</p>
+            <h5 class="price">₹{{product.total_price}}</h5>
+        </div>
+    </div>
+</section>
+<!-- /#single_product -->
+
+{% endblock %}

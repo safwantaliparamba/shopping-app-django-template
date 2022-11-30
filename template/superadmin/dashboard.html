@@ -1,0 +1,62 @@
+{% extends "boilerplate/superadmin.html" %} {% load static %}{% block content%}
+
+<div id="dashboard">
+    <h1>Dashboard</h1>
+
+    <div class="top-charts">
+        <ul>
+            <li>
+                <div class="left">
+                    <div class="img-wrapper">
+                        <img src="{% static 'images/growth.png' %}" alt="" />
+                    </div>
+                </div>
+                <div class="right">
+                    <h2>₹ 88,732</h2>
+                    <h4>Sales Revenue</h4>
+                </div>
+            </li>
+            <li>
+                <div class="left">
+                    <div class="img-wrapper">
+                        <img src="{% static 'images/bar-chart.png' %}" alt="" />
+                    </div>
+                </div>
+                <div class="right">
+                    <h2>738</h2>
+                    <h4>total sales - <strong>march 2021</strong></h4>
+                </div>
+            </li>
+            <li>
+                <div class="left">
+                    <div class="img-wrapper">
+                        <img src="{% static 'images/profit.png' %}" alt="" />
+                    </div>
+                </div>
+                <div class="right">
+                    <h2>₹ 14,729</h2>
+                    <h4>profit</h4>
+                </div>
+            </li>
+            <li>
+                <div class="left">
+                    <div class="img-wrapper">
+                        <img src="{% static 'images/customer.png' %}" alt="" />
+                    </div>
+                </div>
+                <div class="right">
+                    <h2>328</h2>
+                    <h4>new customers</h4>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="bottom-charts">
+        <h1>SALES REPORT</h1>
+        <div class="hero-wrapper">
+            <img src="{% static 'images/demo-chart.svg' %}" alt="">
+        </div>
+    </div>
+</div>
+
+{% endblock %}

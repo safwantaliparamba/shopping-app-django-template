@@ -1,0 +1,87 @@
+{% extends "boilerplate/superadmin.html" %} {% load static %}{% block content%}
+
+<div id="manage-users">
+    <div class="head">
+        <h1>Manage Users</h1>
+        <form >
+            <input type="search" placeholder="search users..." name="q" value="{{ request.GET.q }}" />
+            <button type="submit">
+                <img
+                    src="{% static 'images/search.svg' %}"
+                    class="wrap"
+                    alt=""
+                />
+            </button>
+        </form>
+    </div>
+    <div class="content">
+        <ul class="left">
+            {% if customers %}
+            {% for customer in customers %}
+            <li>
+                <h1><span>{{forloop.counter}}</span> {{customer.user.username}}</h1>
+                <div class="actions">
+                    <img
+                        data-cart-id="{{customer.cart.id}}"
+                        src="{% static 'images/cart.svg' %}"
+                        alt=""
+                        class="cart"
+                    />
+                    <a href="/users/{{customer.id}}/orders/">
+                        <img
+                        src="{% static 'images/shopping-bag.png' %}"
+                        alt=""
+                        class="orders"
+                    />
+                    </a>
+                    <a href="{% url 'superadmin:view_user_profile' pk=customer.id %}">
+                        <img
+                        src="{% static 'images/user-settings.png' %}"
+                        alt=""
+                        class="settings"
+                    />
+                    </a>
+                </div>
+            </li>
+            {% endfor %}
+            {% else %}
+            <h1>No users found</h1>
+            {% endif %}
+        </ul>
+        <div class="filters">
+            <h1>Sort by</h1>
+            <form>
+                <div class="input-container">
+                    <input
+                        id="latest"
+                        name="filter_by"
+                        value="latest"
+                        type="radio"
+                    />
+                    <label for="latest"  >latest</label>
+                </div>
+                <div class="input-container">
+                    <input
+                        id="oldest"
+                        name="filter_by"
+                        value="oldest"
+                        type="radio"
+                    />
+                    <label for="oldest">oldest</label>
+                </div>
+                <button type="submit">submit</button>
+            </form>
+        </div>
+    </div>
+    <div id="cart-hide-show" class="toggle" >
+        <div class="close-btn">
+            <img src="{% static 'images/close.svg' %}" alt="">
+        </div>
+        <h1>Cart of <a href="">safwan</a></h1>
+        <ul id="cart-attach">
+        </ul>
+    </div>
+</div>
+<!-- /#manage-users -->
+
+{% endblock %}

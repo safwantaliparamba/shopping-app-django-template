@@ -1,0 +1,89 @@
+{% extends "boilerplate/boilerplate.html" %} {% load static %}{% block content%}
+
+<section id="cart">
+    <div class="wrapper">
+        <div class="content order-content">
+            <ul class="items order-items">
+                <h1>Order Details</h1>
+                {% for item in cart_items %}
+                <li class="item order-item">
+                    <div class="left">
+                        <a
+                            href="{% url 'products:single_product' pk=item.pro_id %}"
+                        >
+                            <img src="{{ item.image.url }}" alt="" />
+                        </a>
+                    </div>
+                    <div class="right">
+                        <h3>Price : <span>{{ item.price }}</span></h3>
+                        <h3>Quantity : <span>{{ item.quantity }}</span></h3>
+                        <h3>
+                            Total price : <span>{{ item.total_price }}</span>
+                        </h3>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+            <div class="contact">
+                <form action="{% url 'cart:checkout_confirm' %}" class="checkout" method="post" >
+                    {% csrf_token %}
+                    {% for item in cart_items %}
+                    <input type="hidden" name="pro_id" value="{{ item.pro_id }}" />
+                    <input type="hidden" name="quantity" value="{{ item.quantity }}" />
+                    <input type="hidden" name="total_price" value="{{ item.total_price }}" />
+                    {% endfor %}
+                    <input type="hidden" name="is_cart" value="{{ is_cart }}" />
+                    <h1>Checkout Address</h1>
+                    <div class="input-wrapper">
+                        <label for="address"
+                            >
+                            {{ request.user.customer.name }} <br />
+                            {{ request.user.customer.phone }} <br />
+                            {{request.user.customer.address }} <br />
+                            {{ request.user.customer.pin_code }}</label
+                        >
+                    <input type="radio" checked name="address" id="address" />
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="">Payment method</label>
+                        <select required name="payment_method" id="">
+                            <option value="cash_on_delivery">Cash on Delivery</option>
+                            <option value="net_banking">Net Banking</option>
+                            <option value="upi_payment">UPI Payment</option>
+                            <option value="emi">EMI</option>
+                        </select>
+                    </div>
+                    <a href="{% url 'users:profile' pk=request.user.customer.id %}" class="btn">Edit Details</a>
+                    <div class="input-wrapper">
+                        <button type="submit"  data-id="{{ request.user.customer.id }}" >Proceed to Pay</button>
+                    </div>
+                    <a href="{% url 'web:index' %}" style="background: #ff4545;" class="btn">Cancel</a>
+                </form>
+            </div>
+        </div>
+        <!-- /.content -->
+        <div class="price order-pricing">
+            <h1>PRICE DETAILS</h1>
+            <div class="price_items">
+                <span>Price({{cart_items.count}} items)</span>
+                <span>₹{{product_total}}</span>
+            </div>
+            <div class="price_items">
+                <span>Discount</span>
+                <span>-₹{{discount_total}} </span>
+            </div>
+            <div class="price_items">
+                <span>Delivery Charges</span>
+                <span>₹{{delivery_charges}}</span>
+            </div>
+            <div class="price_items">
+                <span class="total">TOTAL AMOUNT</span>
+                <span class="total">₹{{cart_total}}</span>
+            </div>
+        </div>
+        <!-- /.price -->
+    </div>
+</section>
+<!-- /#cart -->
+
+{% endblock %}

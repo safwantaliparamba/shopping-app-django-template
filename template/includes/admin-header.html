@@ -1,0 +1,30 @@
+{% load static %}
+<header>
+    <h1><a href="{% url 'superadmin:dashboard' %}">Dashboard </a></h1>
+    <form action="" method="get">
+        <input type="search" placeholder="Search here..." name="q" />
+        <button type="submit">
+            <img src="{% static 'images/search.svg' %}" class="wrap" alt="" />
+        </button>
+    </form>
+    <nav>
+        {% if request.user.is_authenticated %}
+        <ul>
+                    <li><a href="/"> Home </a></li>
+                    <li><a href="" class="profile">users</a></li>
+                    <li><a href="" class="profile">orders</a></li>
+                    <!-- <li>
+                        <a href="{% url 'cart:view_cart' %}" class="cart" >
+                             <img class="wrap" src="{% static 'images/cart.svg' %}" alt="cart" />
+                             <span>{{ request.user.customer.cart.items.count }}</span> 
+                        </a>
+                    </li> -->
+                    <li><a href="{% url 'users:logout' %}" class="logout">Logout</a></li>
+         </ul>
+         {% else %}
+        <ul>
+            <li><a href="{% url 'superadmin:login' %}" class="auth login">Login</a></li>
+        </ul>
+        {% endif %}
+    </nav>
+</header>

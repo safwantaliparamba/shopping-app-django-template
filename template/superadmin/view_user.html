@@ -1,0 +1,62 @@
+{% extends "boilerplate/superadmin.html" %} {% load static %}{% block content%}
+
+<div id="view-user-profile">
+    <h1>{{user.name}}</h1>
+    <div class="top">
+        <div class="image">
+            <img src="{% static 'images/demo-profile.jpg' %}" alt="" />
+        </div>
+        <div class="middle">
+            <h2>{{user.name}}</h2>
+            <span>{{user.phone}}</span>
+            <p>{{user.address}} <span>{{user.pin_code}}</span></p>
+            <p>last active : <span>{{user.user.last_login|date:"SHORT_DATE_FORMAT"}}</span><span>{{ user.user.last_login|time:"h:i" }}</span></p>
+        </div>
+        <div class="right">
+            <img
+                data-cart-id="{{user.cart.id}}"
+                src="{% static 'images/cart.svg' %}"
+                alt=""
+                class="cart"
+            />
+            <a href="/users/{{user.id}}/orders/">
+                <img
+                    src="{% static 'images/shopping-bag.png' %}"
+                    alt=""
+                    class="orders"
+                />
+            </a>
+        </div>
+    </div>
+    <div class="middle-actions">
+        <a href="#" class="btn" style="background: #dfa800">
+            Bann this account
+        </a>
+        <a href="#" class="btn" style="background: #ff2c2c">
+            Delete this account
+        </a>
+    </div>
+    <div id="cart-hide-show" class="toggle" >
+        <div class="close-btn">
+            <img src="{% static 'images/close.svg' %}" alt="">
+        </div>
+        <h1>Cart of <a href="">{{user.name}}</a></h1>
+        <ul id="cart-attach" class="" >
+            {% for item in user.cart.items.all %}
+            <li>
+                <div class="left">
+                    <a href="/products/{{item.product.id}}">
+                        <img loading='lazy' src="{{ item.product.image.url }}" alt="">
+                    </a>
+                </div>
+                <div class="right">
+                    <h4>{{ item.product.name }}</h4>
+                    <h4>₹{{ item.product.price }}</h4>
+                </div>  
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+{% endblock %}

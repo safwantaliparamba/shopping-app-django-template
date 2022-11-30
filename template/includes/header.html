@@ -1,8 +1,8 @@
 {% load static %}
 <header>
     <h1><a href="/"> Shopping App </a></h1>
-    <form action="" method="get">
-        <input type="search" placeholder="Search here..." name="q" />
+    <form action="/" method="get">
+        <input type="search" placeholder="Search here..." name="q" value="{{ request.GET.q }}" />
         <button type="submit">
             <img src="{% static 'images/search.svg' %}" class="wrap" alt="" />
         </button>
@@ -10,12 +10,12 @@
     <nav>
         {% if request.user.is_authenticated %}
         <ul>
-                    <li><a href="/"> Home </a></li>
-                    <li><a href="/" class="profile">{{ request.user.customer.name }}</a></li>
+                    <li><a href="{% url 'superadmin:dashboard' %}"> Admin </a></li>
+                    <li><a href="{% url 'users:profile' pk=request.user.customer.pk %}" class="profile">{{ request.user.customer.name }}</a></li>
                     <li>
-                        <a href="/" class="cart" >
+                        <a href="{% url 'cart:view_cart' %}" class="cart" >
                              <img class="wrap" src="{% static 'images/cart.svg' %}" alt="cart" />
-                             <span>{{ request.user.customer.cart.count }}</span> 
+                             <span>{{ request.user.customer.cart.items.count }}</span> 
                         </a>
                     </li>
                     <li><a href="{% url 'users:logout' %}" class="logout">Logout</a></li>

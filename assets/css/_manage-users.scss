@@ -1,0 +1,177 @@
+#manage-users {
+    position: relative;
+
+    .head {
+        width: 70%;
+        text-align: center;
+
+        & > h1 {
+            @include title;
+        }
+        & > form {
+            margin: 0 auto;
+            margin-bottom: 100px;
+            border: 1px solid $black;
+            padding: 10px 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            width: max-content;
+
+            input[type="search"] {
+                font-size: 19px;
+            }
+            button[type="submit"] {
+                width: 20px;
+
+                img.wrap {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    & > .content {
+        display: flex;
+
+        & > ul.left {
+            width: 70%;
+            padding-right: 100px;
+
+            li {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid #ccc;
+                padding: 15px 40px;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                h1 {
+                    span {
+                        font-size: 20px;
+                        font-weight: 700;
+                        margin-right: 12px;
+                    }
+                    font-weight: 600;
+                }
+                .actions {
+                    width: 30%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    img {
+                        display: inline-block;
+                        width: 25px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        & > .filters {
+            @include box;
+            background-color: #d8d8d840;
+            width: 20%;
+            right: 100px;
+
+            & > h1 {
+                @include title;
+            }
+            & > form {
+                .input-container {
+                    margin-bottom: 12px;
+
+                    input {
+                        margin-right: 24px;
+                        cursor: pointer;
+                        &:checked {
+                            background: #000;
+                        }
+                    }
+                    label {
+                        font-size: 18px;
+                        font-weight: 600;
+                        cursor: pointer;
+                    }
+                }
+                button[type="submit"] {
+                    @include btn;
+                    width: 100%;
+                    font-size: 17px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    & > #cart-hide-show {
+        position: absolute;
+        top: 20%;
+        left: 245px;
+        @include box;
+        width: 500px;
+        min-height: min-content;
+        max-height: 500px;
+        overflow-y: scroll;
+
+        &.toggle{
+            display: none;
+        }
+
+        .close-btn {
+            display: flex;
+            justify-content: flex-end;
+
+            img{
+                width: 25px;
+                cursor: pointer;
+            }
+        }
+
+        h1 {
+            @include title;
+
+            a{
+                @extend h1;
+            }
+        }
+        ul {
+            h1.empty-cart{
+                font-size: 18px;
+                color: #ccc;
+            }
+            li {
+                display: flex;
+                align-items: center;
+                margin-bottom: 32px;
+
+                &:last-child{
+                    margin-bottom: 0;
+                }
+
+                .left{
+
+                    a{
+                        display: inline-block;
+                        width:150px;
+                        margin-right: 32px;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+                .right {
+
+                    h4{
+                        @include title;
+                        margin: 0;
+                        font-size: 18px;
+                        margin-bottom: 24px;
+                    }
+                }
+            }
+        }
+    }
+}

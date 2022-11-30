@@ -2,24 +2,29 @@
 
 <section id="home">
     <section class="wrapper">
+        {% if products and not not_found %}
         <h1>Products</h1>
         <ul>
             {% for product in products %}
             <li class="product">
                 <img src="{{ product.image.url }}" alt="mobile" />
-                <a href="/"><h3>{{ product.name }}</h3></a>
-                <p>{{ product.small_description }}</p>
-                <h4>₹{{product.price}}</h4>
+                <a href="{% url 'products:single_product' pk=product.id %}"><h3>{{ product.name }}</h3></a>
+                <p>{{ product.short_description }}</p>
+                <a href="/?category={{product.category}}" class=" category">{{ product.category}} </a>
+                <h4>₹{{product.total_price}}</h4>
                 <div class="buy">
                     {% if product.is_out_of_stock %}
                     <button disabled="disabled" class="out-of-stock">Out of Stock</button>
                     {% else %}
-                    <a href="{% url 'cart:add_to_cart' id=product.id %}" class="to-cart">Add to Cart</a>
-                    <a href="/" class="buy-now">Buy Now</a>
+                    <a href="{% url 'cart:add_to_cart' pro_id=product.id %}" class="to-cart">Add to Cart</a>
+                    <a href="{% url 'cart:checkout' %}?pro_id={{product.id}}&quantity=1" class="buy-now">Buy Now</a>
                     {% endif %}
                 </div>
             </li>
             {% endfor %}
+            {% else %}
+            <h1>No Products Found</h1>
+            {% endif %}
         </ul>
     </section>
 </section>

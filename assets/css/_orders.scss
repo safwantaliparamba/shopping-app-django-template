@@ -1,0 +1,85 @@
+#orders {
+    padding: 50px 100px;
+
+    h1 {
+        @include title;
+    }
+    h3 {
+        text-align: center;
+        display: block;
+        margin-bottom: 24px;
+    }
+    .no-orders {
+        display: flex;
+        justify-content: center;
+
+        a.btn {
+            display: inline-block;
+        }
+    }
+    ul.orders {
+        li {
+            a {
+                display: flex;
+                // align-items: center;
+                justify-content: space-between;
+                padding: 24px;
+                width: 100%;
+                border: 1px solid #a3a0a0bf;
+                margin-bottom: 24px;
+    
+                &:hover{
+                    box-shadow: 0 1px 12px 2px #dbdbdb;
+                }
+    
+                & > .details {
+                    width: 50%;
+                    display: flex;
+                    & > h2 {
+                        display: block;
+                        width: 100px;
+                        img {
+                            width: 100%;
+                            display: block;
+                        }
+                    }
+                    .wrapp {
+                        margin-left: 50px;
+                        h2 {
+                            font-size: 17px;
+                            font-weight: 600;
+                        }
+                        p {
+                            font-size: 15px;
+                        }
+                    }
+                }
+                .price {
+    
+                    h2 {
+                        font-size: 19px;
+                        font-weight: 600;
+                    }
+                }
+                .status {
+                    span.round {
+                        display: inline-block;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        background-color: #26a541;
+                        &.red{
+                            background: #ff0000;
+                        }
+                    }
+                    span {
+                        font-size: 13px;
+                        font-weight: 600;
+                        margin: 0 12px;
+    
+                    }
+                }
+            }
+        }
+    }
+}

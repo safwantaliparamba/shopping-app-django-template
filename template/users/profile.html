@@ -1,0 +1,41 @@
+{% extends "boilerplate/boilerplate.html" %} {% load static %}{% block content%}
+
+<section id="profile">
+    <h1>User Details</h1>
+    <div class="details">
+        <div class="left">
+            <h1>{{user.name|upper}}</h1>
+            <div class="contact">
+                <span>{{user.phone}}</span>
+                <p>{{user.address}}</p>
+                <span>{{user.pin_code}}</span>
+            </div>
+        </div>
+        <!-- /.left -->
+        <div class="right">
+            <a class="btn edit">Edit Details</a>
+        </div>
+        <!-- /.right -->
+    </div>
+    <a class="order-history" href="orders/">order history</a>
+</section>
+<!-- /#profile -->
+
+<div id="show_hide" class="hide">
+    <div class="close">
+        <img src="{% static 'images/close.svg' %}" alt="" />
+    </div>
+    <form action="" method="post">
+        {% csrf_token %}
+        <h1>Edit Details</h1>
+        {% for field in form%}
+        <div class="input-container">
+            <label for="{{field.id_for_label}}">{{field.label}}</label>
+            {{field}}
+        </div>
+        {% endfor %}
+        <button type="submit">submit</button>
+    </form>
+</div>
+
+{% endblock %}

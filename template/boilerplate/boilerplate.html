@@ -5,14 +5,25 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Shpping App</title>
+        <title>{{title|default:'Shopping App'}}</title>
         <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+        <!-- <link rel="stylesheet" href="{% static 'css/croppie.css' %}" /> -->
     </head>
     <body>
         {% include 'includes/header.html' %}
          <section id="wrapp">
+            {% if error %}
+            <div class="common-error">
+                <h4>{{ message }}</h4>
+            </div>
+            {% endif %}
+
             {% block content %} {% endblock %}
          </section>
+         <script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
+         <script src="{% static 'js/sweetalert2.min.js' %}"></script>
+         <!-- <script src="{% static 'js/croppie.min.js' %}"></script> -->
+         <script src="{% static 'js/script.js' %}"></script>
     </body>
 </html>
 

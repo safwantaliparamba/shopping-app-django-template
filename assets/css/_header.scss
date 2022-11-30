@@ -1,7 +1,3 @@
-$primary: #9e5ef3;
-$black: #111;
-$green: #00ff09;
-
 // #header
 
 header {
@@ -10,7 +6,7 @@ header {
     align-items: center;
     width: 100%;
     position: fixed;
-    background-color:inherit;
+    background-color: inherit;
     z-index: 5;
     padding: 25px 100px;
     width: 100%;
@@ -34,7 +30,10 @@ header {
         }
         button[type="submit"] {
             width: 20px;
-            // img{}
+            
+            img.wrap {
+                cursor: pointer;
+            }
         }
     }
     nav {
@@ -81,12 +80,12 @@ header {
                     color: #fff;
                     margin-left: 16px;
                 }
-                a.auth{
+                a.auth {
                     padding: 10px 25px;
                     border-radius: 10px;
                     background: #ddc4ff;
                 }
-                a.login{
+                a.login {
                     color: #9e5ef3;
                 }
                 a.register {

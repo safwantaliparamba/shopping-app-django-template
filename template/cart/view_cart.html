@@ -1,0 +1,93 @@
+{% extends "boilerplate/boilerplate.html" %} {% load static %}{% block content%}
+
+<section id="cart">
+    <div class="wrapper">
+        <div class="content">
+            <ul class="items">
+                {% for item in cart_items %}
+                <li class="item">
+                    <div class="left">
+                        <a
+                            href="{% url 'products:single_product' pk=item.product.id %}"
+                        >
+                            <img src="{{ item.product.image.url }}" alt="" />
+                        </a>
+                    </div>
+                    <div class="right">
+                        <a
+                            href="{% url 'products:single_product' pk=item.product.id %}"
+                            ><h3>{{ item.product.name }}</h3></a
+                        >
+                        <a href="" class="btn category"
+                            >{{ item.product.category }}</a
+                        >
+                        <div class="count">
+                            <span>₹{{ item.product.total_price }}</span>
+                            <div class="add_remove">
+                                <div class="left">
+                                    <h4>{{ item.quantity }}</h4>
+                                </div>
+                                <div class="right">
+                                    <a href="{% url 'cart:add_to_cart' pro_id=item.product.id%}">
+                                        <img src="{% static 'images/up.png' %}"  alt="">
+                                    </a>
+                                    <a href="{% url 'cart:remove_from_cart' pro_id=item.product.id%}">
+                                        <img src="{% static 'images/down.png' %}"  alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        {% if is_out_of_stock %}
+                        <p class="out_of_stock">Currently out of stock</p>
+                        {% endif %}
+                        <div class="btns">
+                            <a href="" class="btn add_to_wishlist"
+                                >add to wishlist</a
+                            >
+                            <a
+                                href="{% url 'cart:remove_from_cart' pro_id=item.product.id%}"
+                                class="btn remove"
+                                >remove</a
+                            >
+                        </div>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+            {% if cart_items %}
+            <div class="order">
+                <a href="{% url 'cart:checkout' %}?{{query_link}}" class="btn place_order">PLACE ORDER</a>
+            </div>
+            {% else %}
+            <div class="no_product">
+                <h1>No Product on Cart</h1>
+                <a href="{% url 'web:index' %}" class="btn">Go Shop Now</a>
+            </div>
+            {% endif %}
+        </div>
+        <!-- /.content -->
+        <div class="price">
+            <h1>PRICE DETAILS</h1>
+            <div class="price_items">
+                <span>Price({{cart_items.count}} items)</span>
+                <span>₹{{product_total}}</span>
+            </div>
+            <div class="price_items">
+                <span>Discount</span>
+                <span>-₹{{discount_total}} </span>
+            </div>
+            <div class="price_items">
+                <span>Delivery Charges</span>
+                <span>₹{{delivery_charges}}</span>
+            </div>
+            <div class="price_items">
+                <span class="total">TOTAL AMOUNT</span>
+                <span class="total">₹{{cart_total}}</span>
+            </div>
+        </div>
+        <!-- /.price -->
+    </div>
+</section>
+<!-- /#cart -->
+
+{% endblock %}
